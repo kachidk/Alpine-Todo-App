@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    
+  }  
+
+ul{
+    list-style-type: none;
+}
+
+content{
+    display: block;
+}
+
+
+/* mobile devices first approach, its affects all classes */
+
+.navBar{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 115px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    
+}
+.navBar ul{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+
+   
+}
+
+.navBar ul > li{
+    margin-left: 10px;
+}
+.navBar ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+.navBar .logo {
+    margin-left: 50px;
+    color: #fff;
+}
+
+.contentContainer{
+    margin-top: 150px;
+    width: 100%;
+    margin-bottom: 500px;
+}
+.contentInner{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    
+}
+.footer{
+    display: flex;
+    display: inherit;
+    position: relative;
+    height: 70px;
+    width: 100vw;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.footerContainer{
+    margin: auto;
+}
+
+.task-content{
+    max-height: 300px;
+    overflow: auto;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.header{
+    background-image: url('/img/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header a {
+    color: #fff;
+    text-decoration: none;
+    border: 4px solid #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    letter-spacing: 9px;
+    padding: 29px 84px 30px;
+}
+
+.header a:hover{
+    background-color: #fff;
+    color: black;
+}
+/* !!! */
+
+
+@media (min-width: 768px){
+
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .navBar ul {
+        display: flex;
+        flex-direction: row;
+        margin-right: 50px;
+    }
+
+    .contentContainer{
+        margin-top: 120px;
+    }
+    .contentInner{
+        max-width: 768px;
+        
+    }
+}
+/* !!! */
+
+
+
+
+
+
+/* for ipad screens and screens between ipad and large screens
+@media (min-width: 640px) {
+    
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navBar ul {
+        display: flex;
+        flex-direction: row;
+        margin-right: 50px;
+    }
+
+    .contentContainer{
+        margin-top: 120px;
+    }
+
+    .contentInner {
+      max-width: 640px;
+    }
+}
+
+for large screens screens */
