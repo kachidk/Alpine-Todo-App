@@ -82,7 +82,7 @@ content{
 }
 
 .task-content{
-    max-height: 300px;
+    max-height: 450px;
     overflow: auto;
 }
 .line-through{
